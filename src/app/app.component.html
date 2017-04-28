@@ -1,5 +1,53 @@
-<h1>
-  {{title}}
-  <alert type="success">hello</alert>
-</h1>
-
+<div class="wrapper row0">
+  <div id="topbar" class="hoc clear">
+    <div class="fl_left">
+      <ul class="nospace inline pushright">
+        <li>
+          some stuff
+        </li>
+      </ul>
+    </div>
+    <div class="fl_right">
+      <ul class="nospace inline pushright">
+        <li>
+          <i class="glyphicon glyphicon-phone"></i>
+          {{ info.phoneNumber }}
+        </li>
+        <li>
+          <i class="glyphicon glyphicon-envelope"></i>
+          {{ info.emailAddress }}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <div id="logo">
+      <h1>
+        <a routerLink="/home" routerLinkActive="active">{{info.companyName}}</a>
+      </h1>
+      <p>{{ info.companyDescription }}</p>
+    </div>
+  </header>
+</div>
+<div class="wrapper row2">
+  <nav id="mainav" class="hoc clear">
+    <ul>
+      <li *ngFor="let link of mainNavLinks">
+        <a routerLink="{{link.path}}" routerLink="active">{{link.name}}</a>
+      </li>
+    </ul>
+    <form action="#">
+      <select (change)="onRouteClick($event.target.value)">
+        <option *ngFor="let link of mainNavLinks" value="{{link.path}}">{{link.name}}</option>
+      </select>
+    </form>
+  </nav>
+</div>
+<div class="main-body">
+  <router-outlet></router-outlet>
+</div>
+<a id="backtotop" href="#top">
+  <i class="glyphicon glyphicon-chevron-up"></i>
+</a>
