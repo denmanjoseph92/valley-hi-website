@@ -167,12 +167,12 @@
 
 
 //supports different screen sizes
-@media screen and (min-width: 978px) {
+@media screen and (min-width: 1020px) {
   .hoc {
-    max-width: 978px
+    max-width: 1020px
   }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1020px) {
   .hoc {
     max-width: 90%
   }
@@ -299,19 +299,19 @@
 }
 
 .main-body::after {
-  content: "";
+  //content: "";
   //background: url(../assets/images/electrical-engineering-wallpaper-5.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;
-  border-color: #D7D7D7;
-  border-bottom: 1px solid;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  //-o-background-size: cover;
+  //background-size: cover;
+  //opacity: 0.5;
+  //top: 0;
+  //left: 0;
+  //bottom: 0;
+  //right: 0;
+  //position: absolute;
+  //z-index: -1;
+  //border-color: #D7D7D7;
+  //border-bottom: 1px solid;
 }
