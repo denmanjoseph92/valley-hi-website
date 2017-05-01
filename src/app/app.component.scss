@@ -298,6 +298,32 @@
   }
 }
 
+@media (min-width: 576px) {
+  .modal-dialog {
+    margin: 30px auto;
+  }
+}
+
+.member_login_link {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    color: #0892D0;
+  }
+}
+
+.modal-title {
+  text-align: center;
+}
+
+.modal-body {
+  padding:10px;
+  input {
+    margin-bottom: 10px;
+    padding: 15px;
+  }
+}
+
 .main-body::after {
   //content: "";
   //background: url(../assets/images/electrical-engineering-wallpaper-5.jpg) no-repeat center center fixed;
